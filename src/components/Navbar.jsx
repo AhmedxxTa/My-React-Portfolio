@@ -9,30 +9,30 @@ const Navbar = () => {
 
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
-      <div className="text-2xl">Personal Portfolio</div>
+      <div className="text-3xl inline border-b-4 border-pink-600">Personal Portfolio</div>
 
-        <ul className=" hidden md:flex">
-          <li>
+        <ul className=" hidden md:flex text-xl">
+          <li className="opacity-70 hover:opacity-100">
             <Link to="home" smooth={true} duration={500}>
               Home
             </Link>
           </li>
-          <li>
+          <li className="opacity-70 hover:opacity-100">
             <Link to="about" smooth={true} duration={500}>
               About
             </Link>
           </li>
-          <li>
+          <li className="opacity-70 hover:opacity-100">
             <Link to="skills" smooth={true} duration={500}>
               Skills
             </Link>
           </li>
-          <li>
+          <li className="opacity-70 hover:opacity-100">
             <Link to="work" smooth={true} duration={500}>
               Projects
             </Link>
           </li>
-          <li>
+          <li className="opacity-70 hover:opacity-100">
             <Link to="contact" smooth={true} duration={500}>
               Contact
             </Link>
@@ -40,31 +40,31 @@ const Navbar = () => {
         </ul>
 
       <div onClick={handleClick} className="md:hidden z-10">
-        {!nav ? <FaBars /> : <FaTimes />}
+        {!nav ? <FaBars size={22} /> : <FaTimes size={22} />}
       </div>
 
       <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl opacity-70 hover:opacity-100">
           <Link onClick={handleClick} to="home" smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl opacity-70 hover:opacity-100">
           <Link onClick={handleClick} to="about" smooth={true} duration={500}>
             About
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl opacity-70 hover:opacity-100">
           <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
             Skills
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl opacity-70 hover:opacity-100">
           <Link onClick={handleClick} to="work" smooth={true} duration={500}>
             Projects
           </Link>
         </li>
-        <li className="py-6 text-4xl">
+        <li className="py-6 text-4xl opacity-70 hover:opacity-100">
           <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             Contact
           </Link>
@@ -74,17 +74,17 @@ const Navbar = () => {
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
           <li className="w-[150px] h-[60px] flex justify-between items-center rounded-md ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0077b5]">
-            <a href="/" className="flex justify-between items-center w-full text-gray-300">
+            <a href="https://www.linkedin.com/in/ahmedtamerelsaid" className="flex justify-between items-center w-full text-gray-300">
               Linkedin <FaLinkedin size={30} />
             </a>
           </li>
           <li className="w-[150px] h-[60px] flex justify-between items-center rounded-md ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333]">
-            <a href="/" className="flex justify-between items-center w-full text-gray-300">
+            <a href="https://github.com/AhmedxxTa" className="flex justify-between items-center w-full text-gray-300">
               Github <FaGithub size={30} />
             </a>
           </li>
           <li className="w-[150px] h-[60px] flex justify-between items-center rounded-md ml-[-100px] hover:ml-[-10px] duration-300 bg-[#1877f2]">
-            <a href="/" className="flex justify-between items-center w-full text-gray-300">
+            <a href="https://www.facebook.com/midorima6shintarou" className="flex justify-between items-center w-full text-gray-300">
               Facebook <FaFacebook size={30} />
             </a>
           </li>
